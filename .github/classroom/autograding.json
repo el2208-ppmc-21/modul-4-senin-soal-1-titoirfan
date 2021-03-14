@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "01",
+      "setup": "make soal-01",
+      "run": "./soal-01",
+      "input": "AUG\r\nM\r\nN\r\nAUG\r\nY\r\nGGG\r\nY\r\nGUG\r\nY\r\nUGG\r\nY\r\nUGA\r\nN\r\n12\r\nA",
+      "output": "Urutan basa output : AUGGGGGUGUGAUGA\r\nTerjadi mutasi tanpa arti\r\nAsMin M pada untaian ada 1",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "02",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "AUG\r\nM\r\nY\r\nGAC\r\nD\r\nN\r\nAUG\r\nN",
+      "output": "Harus dimulai dengan kodon start dan diakhiri dengan kodon stop!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "03",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "GGG\r\nG\r\nY\r\nAUG\r\nM\r\nY\r\nCUG\r\nL\r\nN\r\nAUG\r\nY\r\nGGG\r\nY\r\nGGA\r\nY\r\nUGA\r\nN\r\n9\r\nG",
+      "output": "Urutan basa output : AUGGGGGGGUGA\r\nTidak terjadi mutasi tanpa arti\r\nAsMin G pada untaian ada 2\r\nAsMin M pada untaian ada 1\r\nAsMin L pada untaian ada 0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "04",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "AUG\r\nM\r\nN\r\nGCA\r\nY\r\nUGG\r\nY\r\nUGA\r\nN",
+      "output": "Harus dimulai dengan kodon start dan diakhiri dengan kodon stop!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "05",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "UCG\r\nS\r\nN\r\nAUG\r\nY\r\nUGG\r\nY\r\nGGG\r\nY\r\nUAA\r\nN\r\n12\r\nC",
+      "output": "Mutasi harus dimulai dengan kodon start dan diakhiri dengan kodon stop!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "06",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "CGG\r\nR\r\nY\r\nUUG\r\nL\r\nN\r\nAUG\r\nY\r\nCGG\r\nY\r\nUAU\r\nY\r\nAAG\r\nY\r\nCGG\r\nY\r\nUGA\r\nN\r\n9\r\nG",
+      "output": "Urutan basa output : AUGCGGUAGAAGCGGUGA\r\nTerjadi mutasi tanpa arti\r\nAsMin R pada untaian ada 2\r\nAsMin L pada untaian ada 0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "07",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "UCG\r\nS\r\nY\r\nGGG\r\nG\r\nY\r\nCUG\r\nL\r\nY\r\nGAC\r\nD\r\nY\r\nAUG\r\nM\r\nY\r\nCAG\r\nQ\r\nN\r\nAUG\r\nY\r\nGAC\r\nY\r\nGAC\r\nY\r\nCAG\r\nY\r\nUAG\r\nN\r\n6\r\nA",
+      "output": "Urutan basa output : AUGGAAGACCAGUAG\r\nTidak terjadi mutasi tanpa arti\r\nAsMin S pada untaian ada 0\r\nAsMin G pada untaian ada 0\r\nAsMin L pada untaian ada 0\r\nAsMin D pada untaian ada 1\r\nAsMin M pada untaian ada 1\r\nAsMin Q pada untaian ada 1",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "08",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "AUG\r\nM\r\nN\r\nAUG\r\nY\r\nAUG\r\nY\r\nAUG\r\nY\r\nAUG\r\nY\r\nAUG\r\nY\r\nAUG\r\nY\r\nAUG\r\nY\r\nUGA\r\nN\r\n4\r\nU",
+      "output": "Urutan basa output : AUGUUGAUGAUGAUGAUGAUGUGA\r\nTidak terjadi mutasi tanpa arti\r\nAsMin M pada untaian ada 6",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "09",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "AUG\r\nM\r\nN\r\nAUG\r\nY\r\nAUG\r\nY\r\nUAG\r\nN\r\n9\r\nA",
+      "output": "Urutan basa output : AUGAUGUAA\r\nTidak terjadi mutasi tanpa arti\r\nAsMin M pada untaian ada 2",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./soal-01",
+      "input": "GGG\r\nG\r\nY\r\nAUG\r\nM\r\nN\r\nAUG\r\nY\r\nGGG\r\nY\r\nGGG\r\nY\r\nAUG\r\nY\r\nGCC\r\nY\r\nUGA\r\nN\r\n15\r\nG",
+      "output": "Urutan basa output : AUGGGGGGGAUGGCGUGA\r\nTidak terjadi mutasi tanpa arti\r\nAsMin G pada untaian ada 2\r\nAsMin M pada untaian ada 2",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
